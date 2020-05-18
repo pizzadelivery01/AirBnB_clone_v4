@@ -40,9 +40,11 @@ button:hover {
     margin-top: 0;
     font-weight: 400;
     font-size: 14px;
+    overflow: hidden;
     white-space: nowrap;
-    text-overflow: hidden;
-    max-width: 170px;
+    text-overflow: ellipsis;
+    width: 240px;
+    height: 18px;
 }
 .locations {
     height: 100%;
