@@ -1,7 +1,7 @@
 window.onload = function () {
-    var selected = {};
-    console.log("isthishere");
-    $('INPUT:checkbox').change(function () {
+  var selected = {};
+  console.log('isthishere');
+  $('INPUT:checkbox').change(function () {
     if ($(this).is(':checked')) {
       selected[$(this).attr('data-id')] = $(this).attr('data-name');
     } else {
@@ -19,15 +19,15 @@ window.onload = function () {
     }
     output += '\xa0';
     $('DIV.amenities H4').html(output);
-    });
-// 2-hbnb added
-    $.get("http://127.0.0.1:5001/api/v1/status/", function (data, textSuccess) {
-        if (textSuccess === 'success') {
-             if (data.status === 'OK') {
-	        $('#api_status').addClass('available');
-             } else {
-                $('#api_status').removeClass('available');
-	     }
-	}
-    });
+  });
+  // 2-hbnb added
+  $.get('http://127.0.0.1:5001/api/v1/status/', function (data, textSuccess) {
+    if (textSuccess === 'success') {
+      if (data.status === 'OK') {
+        $('#api_status').addClass('available');
+      } else {
+        $('#api_status').removeClass('available');
+      }
+    }
+  });
 };

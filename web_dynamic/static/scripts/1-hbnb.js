@@ -1,13 +1,13 @@
 window.onload = function () {
-    const selected = {};
-    console.log("testing");
-    $('INPUT:checkbox').change(function () {
+  const selected = {};
+  console.log('testing');
+  $('INPUT:checkbox').change(function () {
     if ($(this).is(':checked')) {
       selected[$(this).attr('data-id')] = $(this).attr('data-name');
     } else {
       delete selected[($(this).attr('data-id'))];
     }
-    let amenlist = $.map(selected, function (v, k) {
+    const amenlist = $.map(selected, function (v, k) {
       return v;
     });
     let output = '';
