@@ -150,6 +150,11 @@ EOF  all  create  destroy  help  quit  show  update
 (hbnb) quit
 ```
 
+## Web Dynamic  
+* Utilize Python Flask library to create a web application  
+* Utilize JavaScript jQuery library to manage HTML content  
+* Ultimately load objects from client side by using own RESTful API  
+
 ## Bugs
 No known bugs at this time. 
 
@@ -160,5 +165,8 @@ Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter
 David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
 
 Second part of Airbnb: Joann Vuong
+
+Fourth part of Airbnb: Jeremy Bedolla and Jennifer Tang  
+
 ## License
 Public Domain. No copy write protection. 
