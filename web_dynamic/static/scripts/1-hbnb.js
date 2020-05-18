@@ -1,5 +1,5 @@
 window.onload = function () {
-    var selected = {};
+    const selected = {};
     console.log("testing");
     $('INPUT:checkbox').change(function () {
     if ($(this).is(':checked')) {
@@ -7,7 +7,7 @@ window.onload = function () {
     } else {
       delete selected[($(this).attr('data-id'))];
     }
-    var amenlist = $.map(selected, function (v, k) {
+    let amenlist = $.map(selected, function (v, k) {
       return v;
     });
     let output = '';
@@ -18,6 +18,6 @@ window.onload = function () {
       }
     }
     output += '\xa0';
-    $('DIV.amenities H4').html(output);
+    $('DIV.amenities h4').html(output);
   });
 };

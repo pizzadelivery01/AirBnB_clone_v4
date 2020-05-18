@@ -40,6 +40,9 @@ button:hover {
     margin-top: 0;
     font-weight: 400;
     font-size: 14px;
+    white-space: nowrap;
+    text-overflow: hidden;
+    max-width: 170px;
 }
 .locations {
     height: 100%;
@@ -50,7 +53,6 @@ button:hover {
     height: 100%;
     max-width: 25%;
 }
-
 .popover {
     visibility: hidden;
     width: 100%;

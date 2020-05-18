@@ -19,17 +19,13 @@ window.onload = function () {
     }
     output += '\xa0';
     $('DIV.amenities H4').html(output);
-  });
-// 2-hbnb added
-    $.ajax({
-	url: "'127.0.0.1:5001/api/v1/status/' + cache_id"
-    }).done(function (data, textStatus, jqXHR) {
-	if (textStatus === 'success') {
-	    $('DIV#api_status').addClass('available');
-	}
-    }).fail(function (jqXHR, textStatus, errorThrown) {
-	$('DIV#api_status').removeClass('available');
     });
-
+// 2-hbnb added
+    $.ajax("127.0.0.1:5001/api/v1/status/").done(function (data) {
+	if (data.status === 'OK') {
+	    $('#api_status').addClass('available');
+        } else {
+            $('#api_status').removeClass('available');
+	}
+    });
 };
-$('#api_status')
