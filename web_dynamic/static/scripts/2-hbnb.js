@@ -1,5 +1,5 @@
 window.onload = function () {
-  var selected = {};
+  const selected = {};
   console.log('isthishere');
   $('INPUT:checkbox').change(function () {
     if ($(this).is(':checked')) {
@@ -7,7 +7,7 @@ window.onload = function () {
     } else {
       delete selected[($(this).attr('data-id'))];
     }
-    var amenlist = $.map(selected, function (v, k) {
+    const amenlist = $.map(selected, function (v, k) {
       return v;
     });
     let output = '';
