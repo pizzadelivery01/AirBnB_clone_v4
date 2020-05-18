@@ -39,7 +39,7 @@ window.onload = function () {
     contentType: 'application/json',
     success: function (data) {
       for (let i = 0; i < data.length; i++) {
-	    const place = data[i];
+        const place = data[i];
         $('section.places').append('<article><div class="title_box"><h2>' + place.name + '</h2><div class="price_by_night">$' + place.price_by_night + '</div></div><div class="information"><div class="max_guest">' + place.max_guest + ' Guests </div><div class="number_rooms"><div class="bed_image"></div>' + place.number_rooms + ' Rooms </div><div class="number_bathrooms"><div class="bath_image"></div>' + place.number_bathrooms + ' Bathrooms </div></div><div class="description">' + place.description + '</div></article>');
       }
     }
