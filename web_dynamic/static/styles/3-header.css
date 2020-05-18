@@ -22,6 +22,6 @@ header .logo {
   border-radius: 50%;
   display: flex;
 }
-.available {
-    background: #00FF00;
+#api_status.available {
+    background: #ff545f;
 }
