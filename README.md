@@ -155,18 +155,29 @@ EOF  all  create  destroy  help  quit  show  update
 * Utilize JavaScript jQuery library to manage HTML content  
 * Ultimately load objects from client side by using own RESTful API  
 
+## Examples of Amenities filter  
+
+![amenities_popover_hover_selected](https://i.imgur.com/XJPLsgN.png)
+
+![cats_and_dogs_filter_selected](https://i.imgur.com/2kv11Xe.png)
+
 ## Bugs
 No known bugs at this time. 
 
 ## Authors
+First part of Airbnb:  
 Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
+Second part of Airbnb:  
+Joann Vuong  
+
+Third part of Airbnb:  
 Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
-David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
+David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)  
 
-Second part of Airbnb: Joann Vuong
-
-Fourth part of Airbnb: Jeremy Bedolla and Jennifer Tang  
+Fourth part of Airbnb:  
+Jeremy Bedolla  
+Jennifer Tang  
 
 ## License
 Public Domain. No copy write protection. 

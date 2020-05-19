@@ -1,6 +1,5 @@
 window.onload = function () {
   const selected = {};
-  console.log('checking');
   $('INPUT:checkbox').change(function () {
     if ($(this).is(':checked')) {
       selected[$(this).attr('data-id')] = $(this).attr('data-name');
@@ -50,7 +49,7 @@ window.onload = function () {
     $.ajax({
       type: 'POST',
       url: 'http://127.0.0.1:5001/api/v1/places_search',
-      data: JSON.stringify({ "amenities": Object.keys(selected) }),
+      data: JSON.stringify({ amenities: Object.keys(selected) }),
       dataType: 'json',
       contentType: 'application/json',
       success: function (data) {
