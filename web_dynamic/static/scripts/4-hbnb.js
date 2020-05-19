@@ -46,11 +46,11 @@ window.onload = function () {
   });
   // 4-hbnb added
   function getData () {
-    $('places > article').remove();
+    $('section.places > article').remove();
     $.ajax({
       type: 'POST',
       url: 'http://127.0.0.1:5001/api/v1/places_search',
-      data: JSON.Stringfy({ amenities: Object.keys(selected) }),
+      data: JSON.stringify({ "amenities": Object.keys(selected) }),
       dataType: 'json',
       contentType: 'application/json',
       success: function (data) {
