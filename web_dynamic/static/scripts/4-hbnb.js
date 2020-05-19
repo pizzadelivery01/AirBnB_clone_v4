@@ -45,7 +45,7 @@ window.onload = function () {
     }
   });
   // 4-hbnb added
-  $('.filters > button').click(function () {
+  function getData () {
     $('places > article').remove();
     $.ajax({
       type: 'POST',
@@ -60,5 +60,6 @@ window.onload = function () {
         }
       }
     });
-  });
+  }
+  $('.filters > button').on('click', getData);
 };
